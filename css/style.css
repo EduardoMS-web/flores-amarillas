@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    /*color: azure;
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    */flex-direction: column; /*
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 7, 77);*/
+    background: radial-gradient(ellipse at bottom, #1f1f58 2%, #0a0238);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* padding-top: -30; */
+}
+
+
+/*.stars {
+    position: fixed;
+    height: 200vh;
+    width: 4px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 
+      1000px 2000px #fff, 1200px 800px #fff, 150px 600px #fff, 
+      800px 300px #fff, 950px 1200px #fff, 300px 900px #fff,
+      400px 400px #fff, 600px 1600px #fff, 1400px 200px #fff;
+    animation: animStars 50s linear infinite;
+}
+
+@keyframes animStars {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-2000px); }
+}*/
+
+
+.description{
+    color:#9285e6
+}
+
+.botones{
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.botones a{
+
+    background-color: #9285e6;
+    padding: 9px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;*/
+
+}
+
+.botones a:focus{
+    background-color: rgb(25, 25, 112);
+}
+
+.greetings{
+    font-size: 7rem;
+    font-weight: 900;
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #191970;
+        text-shadow: 0 0 12px #fff, 0 0 50px #fff, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #9285e6;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1s;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    .description{
+        font-size: 2rem;
+    }
+    
+    .button a{
+        font-size: 1rem;
+    }
+}
